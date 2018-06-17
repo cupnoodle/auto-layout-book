@@ -283,12 +283,26 @@ input:focus {
 }
 
 
-a.cta:hover, a.cta:active, a.cta:visited{
+a.cta:hover, a.cta:active{
   color: #f9f9f9;
+  text-decoration: none;
+  background-color: #5084C0;
 }
 
-a.cta2:hover, a.cta2:active, a.cta2:visited{
+a.cta:visited{
   color: #f9f9f9;
+  text-decoration: none;
+}
+
+a.cta2:hover, a.cta2:active{
+  color: #f9f9f9;
+  text-decoration: none;
+  background-color: #6FCB5E;
+}
+
+a.cta2:visited{
+  color: #f9f9f9;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -299,6 +313,30 @@ a.cta2:hover, a.cta2:active, a.cta2:visited{
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.buybutton{
+  font-size: 1.4rem;
+  padding:0.7rem 2rem 0.7rem 2rem; 
+  background-color: #4078c3; 
+  color: #f9f9f9;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+
+
+  box-shadow: 0px 4px 0px 0px #274780;
+}
+
+a.buybutton:hover, a.buybutton:active{
+  color: #f9f9f9;
+  text-decoration: none;
+  background-color: #5084C0;
+}
+
+a.buybutton:visited{
+  color: #f9f9f9;
+  text-decoration: none;
 }
 
 .drop-shadow{
