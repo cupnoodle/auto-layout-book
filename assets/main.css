@@ -437,7 +437,7 @@ a.buybutton:visited{
 }
 
 .post-subscribe-left, .post-subscribe-right{
-  display: inline-grid;
+  display: inline-table;
   width: 45%;
   height: 100%;
   padding: 1rem;
