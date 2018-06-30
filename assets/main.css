@@ -282,6 +282,19 @@ input:focus {
   box-shadow: 0px 4px 0px 0px #22581E;
 }
 
+.cta-disabled{
+  font-size: 1.4rem;
+  padding:0.7rem 2rem 0.7rem 2rem; 
+  background-color: #6C7991; 
+  color: #f9f9f9;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+  width: 100%;
+
+  box-shadow: 0px 4px 0px 0px #274780;
+}
+
 
 a.cta:hover, a.cta:active{
   color: #f9f9f9;
@@ -303,6 +316,12 @@ a.cta2:hover, a.cta2:active{
 a.cta2:visited{
   color: #f9f9f9;
   text-decoration: none;
+}
+
+a.cta-disabled:hover, a.cta-disabled:active, a.cta-disabled:visited {
+  text-decoration: none;
+  color: #f9f9f9;
+  cursor: not-allowed;
 }
 
 @media screen and (max-width: 600px) {
