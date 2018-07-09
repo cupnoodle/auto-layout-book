@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>Making Sense of Auto Layout</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Making Sense of Auto Layout" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Get your app layout working in minutes by leveraging Auto Layout" />
+<meta property="og:description" content="Get your app layout working in minutes by leveraging Auto Layout" />
+<link rel="canonical" href="http://localhost:4000/book-pitch" />
+<meta property="og:url" content="http://localhost:4000/book-pitch" />
+<meta property="og:site_name" content="Auto Layout Safari" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-15T03:47:00+08:00" />
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Auto Layout Safari" />
+<link rel="stylesheet" href="https://use.typekit.net/luz6otb.css">
+</head>
+<body>
+<main class="page-content" aria-label="Content">
+<div class="wrapper">
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header" style="text-align:center; padding-top: 3rem; margin-bottom: 6rem;">
+    <h1 class="post-title p-name" itemprop="name headline">Making Sense of Auto Layout</h1>
+    <h3>(15% off for waiting list subscribers)</h3>
+    <br><br>
+    <div class="books">
+      <div class="book">
+      <img src="img/cover.png" alt="book cover" width="100px;" />
+      </div>
+    </div>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+
+
+
+<h1 id="waste-time" style="font-size:2em;">"Another day wasted. Shouldn’t <strong>Auto</strong> Layout be... automatic? Why am I spending so much time on it yet the position of labels and images in my app still looks way off?"</h1>
+
+<p>"I don't feel it's normal at all to spend well over 6 hours just to get a simple UI to work!"</p>
+
+<p>You picked up Swift and enjoyed learning it, you managed to put up a simple functional app after following tutorials, but when it comes to designing user interface, Auto Layout seems unreasonable to you. <br></p>
+
+<p>You have spent countless hours trial and error setting constraint in Xcode hoping to make the layout work. Add constraint, run the app, tweak the value, run the app, add more constraint, run the app, deletes all constraints and start adding again.... </p>
+
+<p>When you finally got the layout working on your iPhone and think “<strong>That’s it!</strong>”, but then go to see it on another device ( eg: your friend's iPhone SE ), it all looks absolutely off. Those UILabels and images isn't even at the position they are supposed to be.</p>
+
+<p>Months of coding work is getting thrown away as you can’t even get the user interface to behave as intended on different iPhones and iPads.</p>
+
+<p>At this point it seems like it would be much easier if you just designed UI for every single iPhone and iPad by itself. Spending time fighting with Auto Layout doesn't feel worth it anymore.</p>
+<br>
+
+<div style="text-align: center;">
+  <img class="drop-shadow" src="img/red_lines.png" alt="red lines" />
+</div>
+
+<p><br /><br /></p>
+
+<h1>“I’ve watched around 10 youtube tutorials and even read Apple documentation on Auto Layout but I still have no idea how Auto Layout works”</h1>
+
+<p>You have watched a bunch of Youtube video tutorials but when you open up Xcode and try it, you have no idea what you’re doing.
+Sometimes you managed to do the layout shown in the video, but when it comes to your own layout, you’re clueless. “I mean, on some UIViewControllers with a button and a label like in those tutorials, no problem at all. <strong>But for setups like these?</strong>” <br><br></p>
+
+<div style="text-align: center;">
+  <img class="drop-shadow" src="img/complex_layout.png" alt="complex layout" />
+  <div class="how">How do I even?</div>
+</div>
+
+<p>When you ask for advice on internet forum, you get different conflicting advices. “Ditch the Interface Builder, do Auto Layout in code!”, “Use library like SnapKit!”, “Try UIStackViews!”. Which advice should you take? Should you spend extra time on learning third party library just to make the user interface work? (Answer: No, you don't need to learn extra third party library to make layout work)</p>
+
+<h1 id="what-if-you-knew">What if you knew <strong>exactly</strong> what constraint to add for each element, and able to create user interface that render perfectly on any screen size?</h1>
+<p>What if you knew <strong>exactly</strong> which constraint to place for each element? You could save hours from trial and error-ing constraints. You’d know how to troubleshoot constraints whenever your layout looks off from their supposed position.  You’d be confident that your app will look exactly like how you want it in all iPhones and iPads. <strong>You could finish the app that you have been working on for months, submit it to the App Store, and have a better resume for applying iOS developer positions.</strong>.</p>
+
+<h1 id="learn-the-fundamentals-of-auto-layout">Learn the fundamentals of Auto Layout and create working layout</h1>
+<p>The problem with Auto Layout is that winging it as you go along is not an option. With coding you often can trial and error until it works, so we are used to it. Auto Layout needs to be properly understood and applied systematically, you have to understand what every single constraint is doing, throwing them in at random until its ‘<span style="color:#4691D6;">all blue</span>’ is never going to work.</p>
+
+<p><em>Making Sense of Auto Layout</em> will explain the fundamentals of Auto Layout including how it decides an UI Element (UIView, UILabel etc) position and size, what problems do Auto Layout solve and why do Xcode shows you <span class="red">red lines</span> and how to troubleshoot them.</p>
+
+<h1 id="whats-in-the-book">What’s in the book?</h1>
+<p>Instead of showing you a specific complex layout to follow step by step, this book will break down and explain the fundamentals of Auto Layout and let you connect the dots before you start designing your own layout. This book will focus on doing Auto Layout using Interface Builder (Xcode GUI), but its core concept can be applied to doing it programmatically (using code) as well.</p>
+
+<ul>
+  <li>How User Interface is being designed prior to Auto Layout and why Auto Layout is introduced</li>
+  <li>How Auto Layout determine position and size of a UI Element by using constraints you defined</li>
+  <li>Why missing constraints (<span class="red">Red lines!</span>) appear and how to solve them</li>
+  <li>Why conflicting constraints (<span class="red">Red lines, with numbers!</span>) happen and how to solve them</li>
+  <li>What is intrinsic content size and the importance of it</li>
+  <li>Using Tableview for content with dynamic size</li>
+  <li>Using Scrollview for content with dynamic size</li>
+  <li>What is constraint priority and when to use it</li>
+  <li>What is content hugging and compression resistance</li>
+  <li>What is Stackview and how does it simplify constraints</li>
+  <li>Animating views with constraint</li>
+</ul>
+
+<h1 id="you-get">You'll get</h1>
+<div style="text-align: center;">
+  <img src="img/package_smol.png" alt="red lines" />
+</div>
+<br>
+<ul>
+  <li>The book in PDF format, 147 pages</li>
+  <li>6 practice Xcode projects (Xcode 9.2+) to follow-along the chapters</li>
+  <li>Future updates on the book, if available</li>
+</ul>
+
+<div style="text-align:center;">
+  <br>
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="buybutton" href="https://gum.co/autolayoutbook/earlybirds?wanted=true" target="_blank">Get the book for <s>$29</s> $24.65</a>
+<br>
+<br>
+<br>
+<span style="margin-top:2rem;">Waiting list promo valid 11th July 2018</span>
+
+</div>
+
+
+
+<h1 id="testimonial">Testimonial</h1>
+<blockquote>
+  <p>“dude… wow… good job on this series! One of the best explanations I’ve read!”
+ – <a href="https://twitter.com/getaclue_1">Alex Kluew</a></p>
+</blockquote>
+
+<h1 id="freesample">Can I try a free sample?</h1>
+Absolutely! Grab your free sample below and start <i>Making Sense of Auto Layout</i> today.
+
+<div class="post-subscribe">
+  <div class="post-subscribe-left">
+    <h4>Understand Auto Layout and design the user interface you want</h4>
+    <span> 
+      <img src="img/cover.png"></img>
+    </span>
+  </div>
+  <div class="post-subscribe-right">
+    <form action="https://www.getdrip.com/forms/59383756/submissions" method="post" data-drip-embedded-form="59383756">
+      <div style="margin-bottom: 0.5rem;">
+        <label for="drip-firstname">Name<span style="color:#952B45;">*</span></label><br />
+        <input type="text" id="drip-firstname" name="fields[firstname]" value="" />
+      </div>
+      <div>
+        <label for="drip-email">Email Address<span style="color:#952B45;">*</span></label><br />
+        <input type="email" id="drip-email" name="fields[email]" value="" />
+      </div>
+      <div>
+        <br>
+        <input type="submit" value="Send me the samples" data-drip-attribute="sign-up-button" />
+        <br>
+        <span style="font-size: 0.8rem;">+ Bi-Weekly ish iOS Development tips.<br /> Unsubscribe any time.</span>
+      </div>
+    </form>
+  </div>
+</div>
+
+  
+  <h1 id="faq">FAQ</h1>
+  <p><strong>Q: Which programming language will the book use?</strong><br>
+  The book will use Swift 4 for code samples, although majority of the book focuses on interface builder (without code).
+  </p>
+  <p><strong>Q: How advanced is Making Sense of Auto Layout?</strong><br>
+  A lot of beginners to iOS Development struggle to understand Auto Layout and how constraints work. This book is written with the motivation of aiding beginner iOS developer to gain an understanding of how Auto Layout and constraints works and why Apple designed this way.
+
+  The book is not about super-complex layout with a step-by-step guide, it is about making sense of Auto Layout and constraints. If you can implement a responsive user interface using constraints by yourself, and understand how it works, this might not be for you.
+  </p>
+  <p><strong>Q: What if I’m unhappy with the book?</strong><br>
+  I want you to be happy with the book, if for some reason you’re not, just send me an <a href="mailto:axel@fluffy.es">email</a> and I’ll give you a refund as soon as I can.
+  </p>
+  <p><strong>I have another question...</strong><br>
+  If your question is not covered here, drop me an email: <a href="mailto:axel@fluffy.es">axel@fluffy.es</a>, I'll be happy to answer</a>.
+  </p>
+
+  <h1 id="author">About the Author</h1>
+  <div style="text-align: center;">
+    <img src="img/me.jpg" style="border-radius: 50px;" />
+    <br><br>
+  </div>
+
+  <p>Hi, I'm Axel Kee. I’ve been developing iOS apps for companies, clients and myself — from small indie app to social app that get hundreds of thousands of downloads — since 2016.<br><br>
+    I used to struggle on Auto Layout when I first started picking up iOS development, it took me a lot of practice until it 'clicks' for me. Once I understand the intention behind Auto Layout and how it works, I come to appreciate it as it simplify UI development a lot.  <br><br>
+    I hope this book can make it 'click' for you too.
+    <br><br>
+    <a href="https://fluffy.es">I write about iOS development stuff here.</a>
+  </p>
+  </div><a class="u-url" href="/book-pitch" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Making Sense of Auto Layout</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Contact</li><li><a class="u-email" href="mailto:axel@fluffy.es">axel@fluffy.es</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/cupnoodle"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">cupnoodle</span></a></li><li><a href="https://www.twitter.com/soulchildpls"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">soulchildpls</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Auto Layout is a godsend.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+<!-- Default Statcounter code for Fluffy.es
+https://fluffy.es -->
+<script type="text/javascript">
+var sc_project=11623386; 
+var sc_invisible=1; 
+var sc_security="b2add79b"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11623386/0/b2add79b/1/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+<script>
+/* Modernizr 2.5.3 (Custom Build) | MIT & BSD
+ * Build: http://www.modernizr.com/download/#-csstransforms3d-shiv-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-load
+ */
+;window.Modernizr=function(a,b,c){function z(a){j.cssText=a}function A(a,b){return z(m.join(a+";")+(b||""))}function B(a,b){return typeof a===b}function C(a,b){return!!~(""+a).indexOf(b)}function D(a,b){for(var d in a)if(j[a[d]]!==c)return b=="pfx"?a[d]:!0;return!1}function E(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:B(f,"function")?f.bind(d||b):f}return!1}function F(a,b,c){var d=a.charAt(0).toUpperCase()+a.substr(1),e=(a+" "+o.join(d+" ")+d).split(" ");return B(b,"string")||B(b,"undefined")?D(e,b):(e=(a+" "+p.join(d+" ")+d).split(" "),E(e,b,c))}var d="2.5.3",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n="Webkit Moz O ms",o=n.split(" "),p=n.toLowerCase().split(" "),q={},r={},s={},t=[],u=t.slice,v,w=function(a,c,d,e){var f,i,j,k=b.createElement("div"),l=b.body,m=l?l:b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),k.appendChild(j);return f=["&#173;","<style>",a,"</style>"].join(""),k.id=h,(l?k:m).innerHTML+=f,m.appendChild(k),l||(m.style.background="",g.appendChild(m)),i=c(k,a),l?k.parentNode.removeChild(k):m.parentNode.removeChild(m),!!i},x={}.hasOwnProperty,y;!B(x,"undefined")&&!B(x.call,"undefined")?y=function(a,b){return x.call(a,b)}:y=function(a,b){return b in a&&B(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=u.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(u.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(u.call(arguments)))};return e});var G=function(a,c){var d=a.join(""),f=c.length;w(d,function(a,c){var d=b.styleSheets[b.styleSheets.length-1],g=d?d.cssRules&&d.cssRules[0]?d.cssRules[0].cssText:d.cssText||"":"",h=a.childNodes,i={};while(f--)i[h[f].id]=h[f];e.csstransforms3d=(i.csstransforms3d&&i.csstransforms3d.offsetLeft)===9&&i.csstransforms3d.offsetHeight===3},f,c)}([,["@media (",m.join("transform-3d),("),h,")","{#csstransforms3d{left:9px;position:absolute;height:3px;}}"].join("")],[,"csstransforms3d"]);q.csstransforms3d=function(){var a=!!F("perspective");return a&&"webkitPerspective"in g.style&&(a=e.csstransforms3d),a};for(var H in q)y(q,H)&&(v=H.toLowerCase(),e[v]=q[H](),t.push((e[v]?"":"no-")+v));return z(""),i=k=null,function(a,b){function g(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function h(){var a=k.elements;return typeof a=="string"?a.split(" "):a}function i(a){var b={},c=a.createElement,e=a.createDocumentFragment,f=e();a.createElement=function(a){var e=(b[a]||(b[a]=c(a))).cloneNode();return k.shivMethods&&e.canHaveChildren&&!d.test(a)?f.appendChild(e):e},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+h().join().replace(/\w+/g,function(a){return b[a]=c(a),f.createElement(a),'c("'+a+'")'})+");return n}")(k,f)}function j(a){var b;return a.documentShived?a:(k.shivCSS&&!e&&(b=!!g(a,"article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio{display:none}canvas,video{display:inline-block;*display:inline;*zoom:1}[hidden]{display:none}audio[controls]{display:inline-block;*display:inline;*zoom:1}mark{background:#FF0;color:#000}")),f||(b=!i(a)),b&&(a.documentShived=b),a)}var c=a.html5||{},d=/^<|^(?:button|form|map|select|textarea)$/i,e,f;(function(){var a=b.createElement("a");a.innerHTML="<xyz></xyz>",e="hidden"in a,f=a.childNodes.length==1||function(){try{b.createElement("a")}catch(a){return!0}var c=b.createDocumentFragment();return typeof c.cloneNode=="undefined"||typeof c.createDocumentFragment=="undefined"||typeof c.createElement=="undefined"}()})();var k={elements:c.elements||"abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video",shivCSS:c.shivCSS!==!1,shivMethods:c.shivMethods!==!1,type:"default",shivDocument:j};a.html5=k,j(b)}(this,b),e._version=d,e._prefixes=m,e._domPrefixes=p,e._cssomPrefixes=o,e.testProp=function(a){return D([a])},e.testAllProps=F,e.testStyles=w,g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+t.join(" "):""),e}(this,this.document),function(a,b,c){function d(a){return o.call(a)=="[object Function]"}function e(a){return typeof a=="string"}function f(){}function g(a){return!a||a=="loaded"||a=="complete"||a=="uninitialized"}function h(){var a=p.shift();q=1,a?a.t?m(function(){(a.t=="c"?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){a!="img"&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l={},o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};y[c]===1&&(r=1,y[c]=[],l=b.createElement(a)),a=="object"?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),a!="img"&&(r||y[c]===2?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i(b=="c"?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),p.length==1&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&o.call(a.opera)=="[object Opera]",l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return o.call(a)=="[object Array]"},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,i){var j=b(a),l=j.autoCallback;j.url.split(".").pop().split("?").shift(),j.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]||h),j.instead?j.instead(a,e,f,g,i):(y[j.url]?j.noexec=!0:y[j.url]=1,f.load(j.url,j.forceCSS||!j.forceJS&&"css"==j.url.split(".").pop().split("?").shift()?"c":c,j.noexec,j.attrs,j.timeout),(d(e)||d(l))&&f.load(function(){k(),e&&e(j.origUrl,i,g),l&&l(j.origUrl,i,g),y[j.url]=2})))}function i(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var j,l,m=this.yepnope.loader;if(e(a))g(a,0,m,0);else if(w(a))for(j=0;j<a.length;j++)l=a[j],e(l)?g(l,0,m,0):w(l)?B(l):Object(l)===l&&i(l,m);else Object(a)===a&&i(a,m)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,b.readyState==null&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}}(this,document),Modernizr.load=function(){yepnope.apply(window,[].slice.call(arguments,0))};
+</script>
+</body>
+
+</html>
