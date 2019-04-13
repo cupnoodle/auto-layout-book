@@ -70,7 +70,7 @@
       <p>You have watched a bunch of Youtube video tutorials but when you open up Xcode and try it, you have no idea what you’re doing. Sometimes you managed to do the layout shown in the video, but when it comes to your own layout, you’re clueless.</p>
       <br>
       <p>When you ask for advice on internet forum, you get different conflicting advices. “Ditch the Interface Builder, do Auto Layout in code!”, “Use library like SnapKit!”, “Try UIStackViews!”. Which advice should you take? Should you spend extra time on learning third party library just to make the user interface work? (Answer: No, you don't need to learn extra third party library to make layout work)</p>-->
-      <br><br>
+      <br>
       <p>"Auto Layout shouldn't be that hard! Is it too much to ask for a layout that works across different devices?!", I heard you. Let's take a moment and imagine the following : </p><br>
       <h2>What if you are able to create user interfaces which look great on any screen size?</h2>
       <p>What if you <strong>knew exactly which constraint to add</strong> for each element? You could save hours from trial and error-ing constraints. You’d know how to troubleshoot constraints whenever your layout looks off from their supposed position. <strong>You’d be confident that your app will look exactly like how you want it</strong> in all iPhones and iPads. You could finish the app that you have been working on for months, <strong>submit it to the App Store</strong>, and have a better resume for applying iOS developer positions.</p>
@@ -92,8 +92,21 @@
       <p>By using the help of <strong>Stack views</strong>, you can add/remove UI element easily into the stack without having to add constraints all over again.</p>
       <br>
       <h2>Leverage Size Class to create layout that looks good on different orientation and screen size</h2>
-      
-      <br><br>
+      <p>As the range of devices has increased over the last few years (iPhone 4", 4.7", 5.5", iPad Mini, Pro etc) and split screen mode in iPad is introduced, designing layout that caters for different screen resolution has become more challenging and almost impossible to specifically design layout for each possible screen size.</p>
+      <br>
+      <p>To simplify the process of designing layout that adapts to different screen size, Apple has introduced Size Classes in iOS 8, size classes categorizes different devices using width and height into 4 variants: </p>
+      <ol>
+        <li>Compact Width, Compact Height</li>
+        <li>Compact Width, Regular Height</li>
+        <li>Regular Width, Compact Height</li>
+        <li>Regular Width, Regular Height</li>
+      </ol>
+      <br>
+      <p>Using size classes, we can assign different constraint or even attribute of an UI element when viewed in different device easily : </p>
+      <div style="text-align: center;">
+        <img src="differentFonts.png" alt="different fonts on iphone ipad">
+      </div>
+      <br><br><br>
       <h2>Learn the fundamentals of Auto Layout with <br><span class="bookname">Making Sense Of Auto Layout Book</span></h2>
       <p>Start creating the layout you want, looks good across all iOS devices, and submit it to App Store confidently.</p>
       <br><br>
@@ -112,19 +125,28 @@
         <li>What is content hugging and compression resistance</li>
         <li>What is Stackview and how does it simplify constraints</li>
         <li>Animating views with constraint</li>
+        <li>What is Size Classes and how to use it to create adaptive layout</li>
+        <li>Thinking in proportion</li>
+        <li><strong>Calculator app design case study</strong> (Apply all the auto layout knowledge you learned in this book to replicate iOS default calculator app!)</li>
       </ul>
-
+      <br>
+      <p> By the end of the book, you would be equipped with the ability to build this : </p>
+      <br>
+      <div style="text-align: center;">
+        <img src="result.gif" alt="result"></img>
+      </div>
       <br><br>
       <h1 id="fullpackage">The Book + Case Studies</h1>
       <div style="text-align: center;">
-        <img style="border: 2px solid #181818; border-radius: 4px;" src="goodies.png" srcset="goodies@2x.png 2x" alt="buy book with case studies">
+        <img src="fullpackage2.png" srcset="fullpackage2@2x.png 2x" alt="buy book with case studies">
       </div>
       <br>
       <ul>
-        <li>The book in PDF format, 156 pages</li>
+        <li>The book in PDF format, 210 pages</li>
         <li>~ 2-6 hours of reading depending on your speed, and you can start apply the knowledge after chapter 4</li>
         <li>6 practice Xcode projects (Xcode 9.4+) to follow-along the chapters</li>
         <li>Future updates on the book, if available</li>
+        <li>Xcode project of the <strong>completed calculator app</strong>, so you can compare it to your own work</li>
         <li>3 case studies (Spotify's Now Playing UI, Twitter Profile UI, Twitter Slide Menu)</li>
         <li>Explanation of each constraints used for replicating the UI in the case studies, and also breakdown of components in the UI</li>
         <li>Completed demo Xcode projects for the <a href="https://www.youtube.com/watch?v=yjEIvqIO670">Spotify / Twitter Profile UI / Twitter Slide Menu</a></li>
@@ -140,11 +162,11 @@
       <br><br>
       <h1 id="book">Just the Book</h1>
       <div style="text-align: center;">
-        <img style="border: 2px solid #181818; border-radius: 4px;" src="book.png" srcset="book@2x.png 2x" alt="buy book">
+        <img src="book2.png" srcset="book2@2x.png 2x" alt="buy book">
       </div>
       <br>
       <ul>
-        <li>The book in PDF format, 156 pages</li>
+        <li>The book in PDF format, 210 pages</li>
         <li>~ 2-6 hours of reading depending on your speed, and you can start apply the knowledge after chapter 4</li>
         <li>6 practice Xcode projects (Xcode 9.4+) to follow-along the chapters</li>
         <li>Future updates on the book, if available</li>
@@ -158,18 +180,18 @@
       <br><br>
       <h1 id="book">Just the Case Studies</h1>
       <div style="text-align: center;">
-        <img style="border: 2px solid #181818; border-radius: 4px;" src="casestudies.png" srcset="casestudies@2x.png 2x" alt="buy case studies">
+        <img src="goodies2.png" srcset="goodies2@2x.png 2x" alt="buy case studies">
       </div>
       <br>
       <ul>
-        <li>3 case studies (Spotify's Now Playing UI, Twitter Profile UI, Twitter Slide Menu)</li>
+        <li>4 case studies (Spotify's Now Playing UI, Twitter Profile UI, Twitter Slide Menu, Calculator app)</li>
         <li>Explanation of each constraints used for replicating the UI in the case studies, and also breakdown of components in the UI</li>
-        <li>Completed demo Xcode projects for the <a href="https://www.youtube.com/watch?v=yjEIvqIO670">Spotify / Twitter Profile UI / Twitter Slide Menu</a></li>
+        <li>Completed demo Xcode projects for the <a href="https://www.youtube.com/watch?v=yjEIvqIO670">Spotify / Twitter Profile UI / Twitter Slide Menu / Calculator</a></li>
         <li>Compatible with Xcode 9.4+</li>
       </ul>
       <br>
       <div style="text-align:center;">
-        <a class="cta2" href="https://gum.co/autolayoutprojectbundle" target="_blank">Get the case studies for $20</a>
+        <a class="cta2" href="https://gum.co/autolayoutprojectbundle" target="_blank">Get the case studies for $25</a>
         <br>
         <br>
       </div>
