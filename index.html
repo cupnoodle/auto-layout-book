@@ -155,9 +155,10 @@
       <p>With the case studies, you'll learn how to breakdown complex UI in other apps into individual components and implement them methodically. You would be able to apply the Auto Layout concept you learned in the book into implementing real layout you saw in other apps.</p>
       <br>
       <div style="text-align:center;">
-        <a class="cta2" href="https://gum.co/autolayoutgoodies" target="_blank">Get the book + case studies for $45</a>
+        <a class="cta2" href="https://gum.co/autolayoutgoodies/easter19" target="_blank">Get the book + case studies for <s>$45</s> &nbsp;$38.25</a>
         <br>
         <br>
+        <span id="countdown1"></span>
       </div>
       <br><br>
       <h1 id="book">Just the Book</h1>
@@ -173,9 +174,10 @@
       </ul>
       <br>
       <div style="text-align:center;">
-        <a class="cta2" href="https://gum.co/autolayoutbook" target="_blank">Get the book for $29</a>
+        <a class="cta2" href="https://gum.co/autolayoutbook/easter19" target="_blank">Get the book for <s>$29</s> &nbsp; $24.65</a>
         <br>
         <br>
+        <span id="countdown2"></span>
       </div>
       <br><br>
       <h1 id="book">Just the Case Studies</h1>
@@ -250,21 +252,57 @@
     </div>
   </div>
 
-<!-- Start of StatCounter Code for Default Guide -->
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 3, 2019 23:59:30 GMT+08:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  var discountText = "15% launch discount expiring in " + days + " days " + hours + " hours "
+  + minutes + " minutes "; 
+  // + seconds + "s ";
+
+  document.getElementById("countdown1").innerHTML = discountText;
+  document.getElementById("countdown2").innerHTML = discountText;
+  
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Discount expired 😢";
+  }
+}, 1000);
+</script>
+
+<!-- Default Statcounter code for Autolayout.fluffy.es
+https://autolayout.fluffy.es -->
 <script type="text/javascript">
-var sc_project=11623386; 
+var sc_project=11987714; 
 var sc_invisible=1; 
-var sc_security="b2add79b"; 
+var sc_security="1b30111f"; 
 </script>
 <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js"
 async></script>
 <noscript><div class="statcounter"><a title="Web Analytics"
-href="http://statcounter.com/" target="_blank"><img
+href="https://statcounter.com/" target="_blank"><img
 class="statcounter"
-src="//c.statcounter.com/11623386/0/b2add79b/1/" alt="Web
-Analytics"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
+src="https://c.statcounter.com/11987714/0/1b30111f/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
 
 </body>
 </html>
