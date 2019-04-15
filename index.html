@@ -26,14 +26,14 @@
 <meta name="twitter:data1" content="Axel Kee" />
 
 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/ioi3rzq.css">
 <link rel="stylesheet" href="main.css">
 <script src="https://gumroad.com/js/gumroad.js"></script>
 </head>
 <body>
   <div class="wrapper">
     <div class="header" style="text-align: center;">
-      <h1>"I have wasted so many hours adjusting constraints, yet the position of labels and images in my app still looks way off"</h1>
+      <h1>"I have wasted so many hours adjusting constraints, nothing works, it doesn't make sense!"</h1>
     </div>
     <div class="pitch">
       <span>Do these sounds familiar? </span>
@@ -42,7 +42,7 @@
         <li>Randomly adding and removing constraint and hoping it to work when pressing the ▶️ button</li>
         <li>Kept running into <strong>conflicting constraints</strong> error over and over again</li>
         <li>Xcode told you to change <strong>Content Hugging</strong> and <strong>Content Compression Resistance</strong> priorities, but what are these?</li>
-        <li>Afraid to make changes on constraints fearing you will get <strong>red lines</strong> everywhere</li>
+        <!-- <li>Afraid to make changes on constraints fearing you will get <strong>red lines</strong> everywhere</li> -->
         <li>Finally got it working on your iPhone, but when you view it on iPhone SE, the text doesn't fit</li>
         <li>Finally got it working on your iPhone, but when you view it on iPhone X, the text got clipped by the notch
           <br><br>
@@ -58,18 +58,20 @@
         <li>Run the app</li>
         <li>Add more constraint</li>
         <li>Run the app</li>
-        <li>Deletes all constraints and start again</li>
+        <li>Delete all constraints and start again</li>
       </ol>
       <br>
       <p>You are interested to create an iOS app, you picked up Swift and enjoyed learning it, you managed to create some simple app after following tutorials. But when it comes to designing user interface, Auto Layout doesn't make sense to you, it feels like you have to get lucky to get a layout working. </p>
       <br>
       <p>Months of coding work is getting thrown away as you can’t even get the user interface to display correctly. At this point, you are asking yourself whether it is a good choice to continue iOS programming, as spending the time to fight with Auto Layout doesn't feel worth it anymore.</p>
-      <br><br>
+      <br>
+      <p>Perhaps you have decided to grind through the Auto Layout maze, and finally managed to make a layout that looks good (yay!), but when you view it on another device with different screen size, <strong>UILabels are overlapping each other</strong> and you get tons of error in the Xcode console. Now you feel stuck, as changing the current constraints will break the layout on your current device, but if you don't change it, it doesn't fit on other devices.</p>
       <!--<h2>No matter how many tutorials you follow, when you open Xcode interface builder, you still feel stuck</h2>
       <p>You have watched a bunch of Youtube video tutorials but when you open up Xcode and try it, you have no idea what you’re doing. Sometimes you managed to do the layout shown in the video, but when it comes to your own layout, you’re clueless.</p>
       <br>
       <p>When you ask for advice on internet forum, you get different conflicting advices. “Ditch the Interface Builder, do Auto Layout in code!”, “Use library like SnapKit!”, “Try UIStackViews!”. Which advice should you take? Should you spend extra time on learning third party library just to make the user interface work? (Answer: No, you don't need to learn extra third party library to make layout work)</p>-->
-      <p>"Auto Layout shouldn't be that hard!", you exclaimed. Let's take a moment and imagine the following : </p><br>
+      <br>
+      <p>"Auto Layout shouldn't be that hard! Is it too much to ask for a layout that works across different devices?!", I heard you. Let's take a moment and imagine the following : </p><br>
       <h2>What if you are able to create user interfaces which look great on any screen size?</h2>
       <p>What if you <strong>knew exactly which constraint to add</strong> for each element? You could save hours from trial and error-ing constraints. You’d know how to troubleshoot constraints whenever your layout looks off from their supposed position. <strong>You’d be confident that your app will look exactly like how you want it</strong> in all iPhones and iPads. You could finish the app that you have been working on for months, <strong>submit it to the App Store</strong>, and have a better resume for applying iOS developer positions.</p>
 
@@ -88,7 +90,23 @@
       <h2>Create layout with dynamic content at ease</h2>
       <p>Most of the time your app will communicate with a web API that returns JSON content, you can confidently create a layout that cater to dynamic content using <strong>Self-sizing table view cells</strong> or <strong>Scroll views with dynamic height</strong>. </p>
       <p>By using the help of <strong>Stack views</strong>, you can add/remove UI element easily into the stack without having to add constraints all over again.</p>
-      <br><br>
+      <br>
+      <h2>Leverage Size Class to create layout that looks good on different orientation and screen size</h2>
+      <p>As the range of devices has increased over the last few years (iPhone 4", 4.7", 5.5", iPad Mini, Pro etc) and split screen mode in iPad is introduced, designing layout that caters for different screen resolution has become more challenging and almost impossible to specifically design layout for each possible screen size.</p>
+      <br>
+      <p>To simplify the process of designing layout that adapts to different screen size, Apple has introduced Size Classes in iOS 8, size classes categorizes different devices using width and height into 4 variants: </p>
+      <ol>
+        <li>Compact Width, Compact Height</li>
+        <li>Compact Width, Regular Height</li>
+        <li>Regular Width, Compact Height</li>
+        <li>Regular Width, Regular Height</li>
+      </ol>
+      <br>
+      <p>Using size classes, we can assign different constraint or even attribute of an UI element when viewed in different device easily : </p>
+      <div style="text-align: center;">
+        <img src="differentFonts.png" alt="different fonts on iphone ipad">
+      </div>
+      <br><br><br>
       <h2>Learn the fundamentals of Auto Layout with <br><span class="bookname">Making Sense Of Auto Layout Book</span></h2>
       <p>Start creating the layout you want, looks good across all iOS devices, and submit it to App Store confidently.</p>
       <br><br>
@@ -107,19 +125,28 @@
         <li>What is content hugging and compression resistance</li>
         <li>What is Stackview and how does it simplify constraints</li>
         <li>Animating views with constraint</li>
+        <li>What is Size Classes and how to use it to create adaptive layout</li>
+        <li>Thinking in proportion</li>
+        <li><strong>Calculator app design case study</strong> (Apply all the auto layout knowledge you learned in this book to replicate iOS default calculator app!)</li>
       </ul>
-
+      <br>
+      <p> By the end of the book, you would be equipped with the ability to build this : </p>
+      <br>
+      <div style="text-align: center;">
+        <img src="result.gif" alt="result"></img>
+      </div>
       <br><br>
       <h1 id="fullpackage">The Book + Case Studies</h1>
       <div style="text-align: center;">
-        <img style="border: 2px solid #181818; border-radius: 4px;" src="goodies.png" srcset="goodies@2x.png 2x" alt="buy book with case studies">
+        <img src="fullpackage2.png" srcset="fullpackage2@2x.png 2x" alt="buy book with case studies">
       </div>
       <br>
       <ul>
-        <li>The book in PDF format, 156 pages</li>
+        <li>The book in PDF format, 210 pages</li>
         <li>~ 2-6 hours of reading depending on your speed, and you can start apply the knowledge after chapter 4</li>
         <li>6 practice Xcode projects (Xcode 9.4+) to follow-along the chapters</li>
         <li>Future updates on the book, if available</li>
+        <li>Xcode project of the <strong>completed calculator app</strong>, so you can compare it to your own work</li>
         <li>3 case studies (Spotify's Now Playing UI, Twitter Profile UI, Twitter Slide Menu)</li>
         <li>Explanation of each constraints used for replicating the UI in the case studies, and also breakdown of components in the UI</li>
         <li>Completed demo Xcode projects for the <a href="https://www.youtube.com/watch?v=yjEIvqIO670">Spotify / Twitter Profile UI / Twitter Slide Menu</a></li>
@@ -128,43 +155,45 @@
       <p>With the case studies, you'll learn how to breakdown complex UI in other apps into individual components and implement them methodically. You would be able to apply the Auto Layout concept you learned in the book into implementing real layout you saw in other apps.</p>
       <br>
       <div style="text-align:center;">
-        <a class="cta2" href="https://gum.co/autolayoutgoodies" target="_blank">Get the book + case studies for $45</a>
+        <a class="cta2" href="https://gum.co/autolayoutgoodies/easter19" target="_blank">Get the book + case studies for <s>$45</s> &nbsp;$38.25</a>
         <br>
         <br>
+        <span id="countdown1"></span>
       </div>
       <br><br>
       <h1 id="book">Just the Book</h1>
       <div style="text-align: center;">
-        <img style="border: 2px solid #181818; border-radius: 4px;" src="book.png" srcset="book@2x.png 2x" alt="buy book">
+        <img src="book2.png" srcset="book2@2x.png 2x" alt="buy book">
       </div>
       <br>
       <ul>
-        <li>The book in PDF format, 156 pages</li>
+        <li>The book in PDF format, 210 pages</li>
         <li>~ 2-6 hours of reading depending on your speed, and you can start apply the knowledge after chapter 4</li>
         <li>6 practice Xcode projects (Xcode 9.4+) to follow-along the chapters</li>
         <li>Future updates on the book, if available</li>
       </ul>
       <br>
       <div style="text-align:center;">
-        <a class="cta2" href="https://gum.co/autolayoutbook" target="_blank">Get the book for $29</a>
+        <a class="cta2" href="https://gum.co/autolayoutbook/easter19" target="_blank">Get the book for <s>$29</s> &nbsp; $24.65</a>
         <br>
         <br>
+        <span id="countdown2"></span>
       </div>
       <br><br>
       <h1 id="book">Just the Case Studies</h1>
       <div style="text-align: center;">
-        <img style="border: 2px solid #181818; border-radius: 4px;" src="casestudies.png" srcset="casestudies@2x.png 2x" alt="buy case studies">
+        <img src="goodies2.png" srcset="goodies2@2x.png 2x" alt="buy case studies">
       </div>
       <br>
       <ul>
-        <li>3 case studies (Spotify's Now Playing UI, Twitter Profile UI, Twitter Slide Menu)</li>
+        <li>4 case studies (Spotify's Now Playing UI, Twitter Profile UI, Twitter Slide Menu, Calculator app)</li>
         <li>Explanation of each constraints used for replicating the UI in the case studies, and also breakdown of components in the UI</li>
-        <li>Completed demo Xcode projects for the <a href="https://www.youtube.com/watch?v=yjEIvqIO670">Spotify / Twitter Profile UI / Twitter Slide Menu</a></li>
+        <li>Completed demo Xcode projects for the <a href="https://www.youtube.com/watch?v=yjEIvqIO670">Spotify / Twitter Profile UI / Twitter Slide Menu / Calculator</a></li>
         <li>Compatible with Xcode 9.4+</li>
       </ul>
       <br>
       <div style="text-align:center;">
-        <a class="cta2" href="https://gum.co/autolayoutprojectbundle" target="_blank">Get the case studies for $20</a>
+        <a class="cta2" href="https://gum.co/autolayoutprojectbundle" target="_blank">Get the case studies for $25</a>
         <br>
         <br>
       </div>
@@ -223,21 +252,57 @@
     </div>
   </div>
 
-<!-- Start of StatCounter Code for Default Guide -->
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 3, 2019 23:59:30 GMT+08:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  var discountText = "15% launch discount expiring in " + days + " days " + hours + " hours "
+  + minutes + " minutes "; 
+  // + seconds + "s ";
+
+  document.getElementById("countdown1").innerHTML = discountText;
+  document.getElementById("countdown2").innerHTML = discountText;
+  
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Discount expired 😢";
+  }
+}, 1000);
+</script>
+
+<!-- Default Statcounter code for Autolayout.fluffy.es
+https://autolayout.fluffy.es -->
 <script type="text/javascript">
-var sc_project=11623386; 
+var sc_project=11987714; 
 var sc_invisible=1; 
-var sc_security="b2add79b"; 
+var sc_security="1b30111f"; 
 </script>
 <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js"
 async></script>
 <noscript><div class="statcounter"><a title="Web Analytics"
-href="http://statcounter.com/" target="_blank"><img
+href="https://statcounter.com/" target="_blank"><img
 class="statcounter"
-src="//c.statcounter.com/11623386/0/b2add79b/1/" alt="Web
-Analytics"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
+src="https://c.statcounter.com/11987714/0/1b30111f/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
 
 </body>
 </html>
