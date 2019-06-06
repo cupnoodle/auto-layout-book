@@ -33,13 +33,13 @@
 <body>
   <div class="wrapper">
     <div class="header" style="text-align: center;">
-      <h1>"I have wasted so many hours adjusting constraints, nothing works, it doesn't make sense!"</h1>
+      <h1>"I have wasted so many hours adjusting constraints, it doesn't make sense!"</h1>
     </div>
     <div class="pitch">
       <span>Do these sounds familiar? </span>
       <br><br>
       <ul class="wrong">
-        <li>Randomly adding and removing constraint and hoping it to work when pressing the ▶️ button</li>
+        <li>Adding and removing constraint and hoping it to work when pressing the ▶️ button</li>
         <li>Kept running into <strong>conflicting constraints</strong> error over and over again</li>
         <li>Xcode told you to change <strong>Content Hugging</strong> and <strong>Content Compression Resistance</strong> priorities, but what are these?</li>
         <!-- <li>Afraid to make changes on constraints fearing you will get <strong>red lines</strong> everywhere</li> -->
@@ -65,7 +65,7 @@
       <br>
       <p>Months of coding work is getting thrown away as you can’t even get the user interface to display correctly. At this point, you are asking yourself whether it is a good choice to continue iOS programming, as spending the time to fight with Auto Layout doesn't feel worth it anymore.</p>
       <br>
-      <p>Perhaps you have decided to grind through the Auto Layout maze, and finally managed to make a layout that looks good (yay!), but when you view it on another device with different screen size, <strong>UILabels are overlapping each other</strong> and you get tons of error in the Xcode console. Now you feel stuck, as changing the current constraints will break the layout on your current device, but if you don't change it, it doesn't fit on other devices.</p>
+      <p>Perhaps you have decided to grind through the Auto Layout maze, and finally managed to make a layout that looks good (yay!), but when you view it on another device with different screen size, <strong>UILabels and images are overlapping each other</strong> or there is a big area of blank space. Now you feel stuck, as changing the current constraints will break the layout on your current device, but if you don't change it, it doesn't fit on other devices.</p>
       <!--<h2>No matter how many tutorials you follow, when you open Xcode interface builder, you still feel stuck</h2>
       <p>You have watched a bunch of Youtube video tutorials but when you open up Xcode and try it, you have no idea what you’re doing. Sometimes you managed to do the layout shown in the video, but when it comes to your own layout, you’re clueless.</p>
       <br>
@@ -85,7 +85,7 @@
       <p>The problem with Auto Layout is that winging it as you go along is not an option. With coding you often can trial and error until it works, so we are used to it. Auto Layout needs to be properly understood and applied systematically, you have to understand what every single constraint is doing, throwing them in at random until its <span style="color: #4691D6"> all blue</span> is never going to work.</p>
 
       <br>
-      <p>Making Sense of Auto Layout focuses on the fundamentals of Auto Layout including <strong>how it decides the position and size of a UI Element</strong> (UIView, UILabel etc), what problems do Auto Layout solve, why do Xcode shows you <strong>red lines</strong> and how to troubleshoot them.</p>
+      <p>Making Sense of Auto Layout focuses on the fundamentals of Auto Layout including <strong>how it decides the position and size of a UI Element</strong> (UIView, UILabel etc), what problems do Auto Layout solve, why do Xcode shows you <strong>red lines</strong> and how to troubleshoot them. Understanding the fundamental of Auto Layout can save you from bruteforcing constraints to make something work, as you can <strong>predict how it works and confidently place constraints.</strong></p>
       <br>
       <h2>Create layout with dynamic content at ease</h2>
       <p>Most of the time your app will communicate with a web API that returns JSON content, you can confidently create a layout that cater to dynamic content using <strong>Self-sizing table view cells</strong> or <strong>Scroll views with dynamic height</strong>. </p>
