@@ -35,7 +35,7 @@
     <div class="header" style="text-align: center;">
 <!--       <span style="font-size: 0.8em;">Want the book already? <a href="#fullpackage">Click here to see buying options</a></span>
       <br><br> -->
-      <h1>"I have wasted so many hours adjusting constraints, it doesn't make sense!"</h1>
+      <h1>"I have wasted so many hours fighting with Auto Layout constraints, it doesn't make sense!"</h1>
     </div>
     <div class="pitch">
       <span>Do these sounds familiar? </span>
@@ -45,7 +45,7 @@
         <li>Kept running into <strong>conflicting constraints</strong> error over and over again</li>
         <li>Xcode told you to change <strong>Content Hugging</strong> and <strong>Content Compression Resistance</strong> priorities, but what are these?</li>
         <!-- <li>Afraid to make changes on constraints fearing you will get <strong>red lines</strong> everywhere</li> -->
-        <li>Finally got it working on your iPhone, but when you view it on iPhone SE, the text doesn't fit</li>
+        <li>Finally got it working on your iPhone, but when you view it on iPhone SE, the text doesn't fit (andyou secretly curse Apple for still supporting iPhone SE)</li>
         <li>Finally got it working on your iPhone, but when you view it on iPhone X, the text got clipped by the notch
           <br><br>
           <p style="text-align: center;">
@@ -67,7 +67,12 @@
       <br>
       <p>Months of coding work is getting thrown away as you can’t even get the user interface to display correctly. At this point, you are asking yourself whether it is a good choice to continue iOS programming, as spending the time to fight with Auto Layout doesn't feel worth it anymore.</p>
       <br>
-      <p>Perhaps you have decided to grind through the Auto Layout maze, and finally managed to make a layout that looks good (yay!), but when you view it on another device with different screen size, <strong>UILabels and images are overlapping each other</strong> or there is a big area of blank space. Now you feel stuck, as changing the current constraints will break the layout on your current device, but if you don't change it, it doesn't fit on other devices.</p>
+      <p>Perhaps you have decided to grind through the Auto Layout maze, and finally managed to make a layout that looks good (yay!), but when you view it on another device with different screen size, <strong>UILabels and images are overlapping each other</strong> or there is a big area of blank space. 
+      </p>
+      <p style="text-align: center;">
+          <img src="clipped.png" style="width:314px; height:auto; margin-left: auto; margin-right: auto;" alt="Overlapping table view" /></p>
+      <p>
+      Now you feel stuck, as changing the current constraints will break the layout on your current device, but if you don't change it, it doesn't fit on other devices.</p>
       <!--<h2>No matter how many tutorials you follow, when you open Xcode interface builder, you still feel stuck</h2>
       <p>You have watched a bunch of Youtube video tutorials but when you open up Xcode and try it, you have no idea what you’re doing. Sometimes you managed to do the layout shown in the video, but when it comes to your own layout, you’re clueless.</p>
       <br>
@@ -165,7 +170,7 @@
       <p>With the case studies, you'll learn how to breakdown complex UI in other apps into individual components and implement them methodically. You would be able to apply the Auto Layout concept you learned in the book into implementing real layout you saw in other apps.</p>
       <br>
       <div style="text-align:center;">
-        <a class="cta2" href="https://gum.co/autolayoutgoodies" target="_blank">Get the book + case studies for <s>$45</s> &nbsp;$38.25</a>
+        <a class="cta2" href="https://gum.co/autolayoutgoodies/augustsummer" target="_blank">Get the book + case studies for <s>$45</s> &nbsp;$38</a>
         <br>
         <br>
         <span id="countdown1" style="font-weight: bold;"></span>
@@ -184,7 +189,7 @@
       </ul>
       <br>
       <div style="text-align:center;">
-        <a class="cta2" href="https://gum.co/autolayoutbook" target="_blank">Get the book for <s>$29</s> &nbsp; $24.65</a>
+        <a class="cta2" href="https://gum.co/autolayoutbook/augustsummer" target="_blank">Get the book for <s>$29</s> &nbsp; $25</a>
         <br>
         <br>
         <span id="countdown2" style="font-weight: bold;"></span>
@@ -269,7 +274,7 @@
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("September 10, 2019 23:59:30 GMT+08:00").getTime();
+var countDownDate = new Date("September 11, 2019 23:59:30 GMT+08:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -287,7 +292,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  var discountText = "15% launch discount expiring in " + days + " days " + hours + " hours "
+  var discountText = "15% summer sale discount expiring in " + days + " days " + hours + " hours "
   + minutes + " minutes "; 
   // + seconds + "s ";
 
