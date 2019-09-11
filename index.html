@@ -170,10 +170,7 @@
       <p>With the case studies, you'll learn how to breakdown complex UI in other apps into individual components and implement them methodically. You would be able to apply the Auto Layout concept you learned in the book into implementing real layout you saw in other apps.</p>
       <br>
       <div style="text-align:center;">
-        <a class="cta2" href="https://gum.co/autolayoutgoodies/augustsummer" target="_blank">Get the book + case studies for <s>$45</s> &nbsp;$38</a>
-        <br>
-        <br>
-        <span id="countdown1" style="font-weight: bold;"></span>
+        <a class="cta2" href="https://gum.co/autolayoutgoodies?wanted=true" target="_blank">Get the book + case studies for $45</a>
       </div>
       <br><br>
       <h1 id="book">Just the Book</h1>
@@ -193,10 +190,7 @@
       </ul>
       <br>
       <div style="text-align:center;">
-        <a class="cta2" href="https://gum.co/autolayoutbook/augustsummer" target="_blank">Get the book for <s>$29</s> &nbsp; $25</a>
-        <br>
-        <br>
-        <span id="countdown2" style="font-weight: bold;"></span>
+        <a class="cta2" href="https://gum.co/autolayoutbook?wanted=true" target="_blank">Get the book for $29</a>
       </div>
       <br><br>
       <h1 id="book">Just the Case Studies</h1>
@@ -275,41 +269,6 @@
       <span>Made by <a href="https://fluffy.es">Axel Kee</a></span>
     </div>
   </div>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("September 11, 2019 23:59:30 GMT+08:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  var discountText = "15% summer sale discount expiring in " + days + " days " + hours + " hours "
-  + minutes + " minutes "; 
-  // + seconds + "s ";
-
-  document.getElementById("countdown1").innerHTML = discountText;
-  document.getElementById("countdown2").innerHTML = discountText;
-  
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "Discount expired 😢";
-  }
-}, 1000);
-</script>
 
 <!-- Default Statcounter code for Autolayout.fluffy.es
 https://autolayout.fluffy.es -->
