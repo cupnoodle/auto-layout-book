@@ -35,8 +35,8 @@
     <div class="header" style="text-align: center;">
       <img style="max-width: 75%;" src="book3.png" srcset="book3@2x.png 2x" alt="Making Sense of Auto Layout Book">
       <br><br>
-<!--       <span style="font-size: 0.8em;">Want the book already? <a href="#fullpackage">Click here to see buying options</a></span>
-      <br><br> -->
+      <span style="font-size: 0.8em;">Want the book already? <a href="#fullpackage">Click here to see buying options</a></span>
+      <br><br>
       <h1>"I have wasted so many hours fighting with Auto Layout constraints... It doesn't make sense!"</h1>
     </div>
     <div class="pitch">
@@ -173,6 +173,10 @@
       <br>
       <div style="text-align:center;">
         <a class="cta2" href="https://gum.co/autolayoutgoodies/darkmodefriday?wanted=true" target="_blank">Get the book + case studies for <s>$45</s> $27</a>
+        <br>
+        <br>
+        <span style="font-weight: bold;">Black Friday 40% off discount expiring in</span><br>
+        <span id="countdown1"></span>
       </div>
       <br><br>
       <h1 id="book">Just the Book</h1>
@@ -193,6 +197,10 @@
       <br>
       <div style="text-align:center;">
         <a class="cta2" href="https://gum.co/autolayoutbook/darkmodefriday?wanted=true" target="_blank">Get the book for <s>$29</s> $17.40</a>
+        <br>
+        <br>
+        <span style="font-weight: bold;">Black Friday 40% off discount expiring in</span><br>
+        <span id="countdown2"></span>
       </div>
       <br><br>
       <h1 id="book">Just the Case Studies</h1>
@@ -211,6 +219,8 @@
         <a class="cta2" href="https://gum.co/autolayoutprojectbundle/darkmodefriday?wanted=true" target="_blank">Get the case studies for <s>$29</s> $17.40</a>
         <br>
         <br>
+        <span style="font-weight: bold;">Black Friday 40% off discount expiring in</span><br>
+        <span id="countdown3"></span>
       </div>
       <br><br>
       <h1>Testimonials</h1>
@@ -271,6 +281,39 @@
       <span>Made by <a href="https://fluffy.es">Axel Kee</a></span>
     </div>
   </div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("December 6, 2019 23:59:30 GMT+08:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+  // Get todays date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  var discountText = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds"; 
+  // + seconds + "s ";
+  document.getElementById("countdown1").innerHTML = discountText;
+  document.getElementById("countdown2").innerHTML = discountText;
+  document.getElementById("countdown3").innerHTML = discountText;
+  
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    var endedText = "Discount expired 😢";
+    document.getElementById("countdown1").innerHTML = endedText;
+    document.getElementById("countdown2").innerHTML = endedText;
+    document.getElementById("countdown3").innerHTML = endedText;
+  }
+}, 1000);
+</script>
+
 
 <!-- Default Statcounter code for Autolayout.fluffy.es
 https://autolayout.fluffy.es -->
