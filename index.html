@@ -176,6 +176,10 @@
         <a class="cta2" href="https://gum.co/autolayoutgoodies" target="_blank">Get the book + case studies for $45</a>
         <br>
       </div>
+      <div id="package-discount" style="display: none;">
+        <br><br>
+        <p>We support purchasing power parity! It seems like you are from <strong><span id="package-discount-country">country</span></strong>, you can use the discount code <strong id="package-discount-code">code</strong> during checkout to get <strong><span id="package-discount-percent">0</span>% off!</strong></p>
+      </div>
       <br><br>
       <h1 id="book">Just the Book</h1>
       <div style="text-align: center;">
@@ -196,6 +200,10 @@
       <div style="text-align:center;">
         <a class="cta2" href="https://gum.co/autolayoutbook" target="_blank">Get the book for $29</a>
         <br>
+      </div>
+      <div id="package-book" style="display: none;">
+        <br><br>
+        <p>We support purchasing power parity! It seems like you are from <strong><span id="package-book-country">country</span></strong>, you can use the discount code <strong id="package-book-code">code</strong> during checkout to get <strong><span id="package-book-percent">0</span>% off!</strong></p>
       </div>
       <br><br>
       <h1 id="book">Just the Case Studies</h1>
@@ -327,6 +335,40 @@ fathom('set', 'siteId', 'KTSUFJTJ');
 fathom('trackPageview');
 </script>
 <!-- / Fathom -->
+
+<script type="text/javascript">
+function loadXMLDoc() {
+    var xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
+           if (xmlhttp.status == 200) {
+              // document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+              console.log('returned response');
+
+              var discountJSON = JSON.parse(xmlhttp.responseText);
+
+              if(discountJSON.hasOwnProperty('code')){
+                document.getElementById("package-discount").style.display = "block";
+                document.getElementById("package-discount-country").innerHTML = discountJSON.country;
+                document.getElementById("package-discount-code").innerHTML = discountJSON.code;
+                document.getElementById("package-discount-percent").innerHTML = discountJSON.percent;
+
+                document.getElementById("package-book").style.display = "block";
+                document.getElementById("package-book-country").innerHTML = discountJSON.country;
+                document.getElementById("package-book-code").innerHTML = discountJSON.code;
+                document.getElementById("package-book-percent").innerHTML = discountJSON.percent;
+              }
+           }
+        }
+    };
+
+    xmlhttp.open("GET", "https://sxe92w3cu0.execute-api.ap-southeast-1.amazonaws.com/prod", true);
+    xmlhttp.send();
+}
+
+loadXMLDoc();
+</script>
 
 </body>
 </html>
